@@ -32,21 +32,21 @@ Requerimientos (NO usar arreglos):
    Subtotal, Descuento, Total a pagar (2 decimales)
 
 
-Proceso obligatorio de entrega (Git)
-Clonar el repositorio del grupo (ejemplo): git clone <URL_DEL_REPO>
-Entrar al repositorio: cd <carpeta_del_repo>
-Crear tu rama con la nomenclatura: nombres-apellidoPaterno-gradoygrupo
-Ejemplo EXACTO: elieldavid-rodriguez-2c
-Crear y cambiarte a tu rama (ejemplo): git checkout -b elieldavid-rodriguez-2c
-Dentro de tu rama, crear el proyecto y copiar/pegar los archivos base proporcionados.
-Realizar commits con mensajes claros.
-Subir tu rama al remoto: git push -u origin <tu_rama>
-NO se acepta trabajo en main. Si haces push a main, automáticamente estás reprobado en U2.
-Si no subes tu rama, el examen no será calificado ni revisado, sin excepciones.
+#Proceso obligatorio de entrega:
+- Clonar el repositorio del grupo (ejemplo): git clone <URL_DEL_REPO>
+- Entrar al repositorio: cd <carpeta_del_repo>
+- Crear tu rama con la nomenclatura: nombres-apellidoPaterno-gradoygrupo
+- Ejemplo EXACTO: elieldavid-rodriguez-2c
+- Crear y cambiarte a tu rama (ejemplo): git checkout -b elieldavid-rodriguez-2c
+- Dentro de tu rama, crear el proyecto y copiar/pegar los archivos base proporcionados.
+- Realizar commits con mensajes claros.
+- Subir tu rama al remoto: git push -u origin <tu_rama>
+- NO se acepta trabajo en main. Si haces push a main, automáticamente estás reprobado en U2.
+- Si no subes tu rama, el examen no será calificado ni revisado, sin excepciones.
 
-Criterio de evaluación (70 puntos)
-Se revisará el código directamente (métodos, validaciones, control de flujo, resultados).
-10 pts — Clonación correcta y trabajo SOLO en tu rama (nomenclatura correcta, commits, push de la rama).
-40 pts — Implementación de métodos solicitados (firmas correctas, static, retornos correctos).
-15 pts — Validaciones y control de flujo (if/else, break, continue, return) usados correctamente.
-5 pts — Salida/formatos solicitados (mensajes y resultados claros).
+#Criterio de evaluación (70 puntos)
+-Se revisará el código directamente (métodos, validaciones, control de flujo, resultados).
+-10 pts — Clonación correcta y trabajo SOLO en tu rama (nomenclatura correcta, commits, push de la rama).
+-40 pts — Implementación de métodos solicitados (firmas correctas, static, retornos correctos).
+-15 pts — Validaciones y control de flujo (if/else, break, continue, return) usados correctamente.
+-5 pts — Salida/formatos solicitados (mensajes y resultados claros).
