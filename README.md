@@ -45,8 +45,8 @@ Requerimientos (NO usar arreglos):
 - Si no subes tu rama, el examen no será calificado ni revisado, sin excepciones.
 
 #Criterio de evaluación (70 puntos)
--Se revisará el código directamente (métodos, validaciones, control de flujo, resultados).
--10 pts — Clonación correcta y trabajo SOLO en tu rama (nomenclatura correcta, commits, push de la rama).
--40 pts — Implementación de métodos solicitados (firmas correctas, static, retornos correctos).
--15 pts — Validaciones y control de flujo (if/else, break, continue, return) usados correctamente.
--5 pts — Salida/formatos solicitados (mensajes y resultados claros).
+- Se revisará el código directamente (métodos, validaciones, control de flujo, resultados).
+- 10 pts — Clonación correcta y trabajo SOLO en tu rama (nomenclatura correcta, commits, push de la rama).
+- 40 pts — Implementación de métodos solicitados (firmas correctas, static, retornos correctos).
+- 15 pts — Validaciones y control de flujo (if/else, break, continue, return) usados correctamente.
+- 5 pts — Salida/formatos solicitados (mensajes y resultados claros).
