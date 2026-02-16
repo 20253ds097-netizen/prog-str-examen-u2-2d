@@ -6,7 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         double subtotal = 0;
 
-        // Captura de precios
         while (true) {
             System.out.print("Ingresa precio (0 para terminar): ");
 
@@ -27,7 +26,7 @@ public class Main {
             subtotal = codigo.calcularSubtotal(subtotal, precio);
         }
 
-        // Método de pago
+
         System.out.println("Método de pago: 1) Efectivo  2) Tarjeta");
 
         if (!sc.hasNextInt()) {
@@ -40,12 +39,11 @@ public class Main {
             return;
         }
 
-        // Cálculos finales
         double descuento = codigo.calcularDescuento(subtotal, metodo);
         double total = codigo.calcularTotal(subtotal, descuento);
 
-        // Ticket final
-        System.out.println("\n--- TICKET ---");
+
+        System.out.println("TICKET");
         System.out.printf("Subtotal: %.2f\n", subtotal);
         System.out.printf("Descuento: %.2f\n", descuento);
         System.out.printf("Total: %.2f\n", total);
