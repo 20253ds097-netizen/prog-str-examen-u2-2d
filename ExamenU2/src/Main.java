@@ -2,47 +2,52 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        U2Service codigo=new U2Service();
         Scanner sc = new Scanner(System.in);
-        double subtotal = 0.0;
+        double subtotal = 0;
 
+        // Captura de precios
         while (true) {
-            System.out.print("Precio (0 para terminar): ");
+            System.out.print("Ingresa precio (0 para terminar): ");
 
             if (!sc.hasNextDouble()) {
                 System.out.println("Entrada inválida");
                 return;
             }
-            double p = sc.nextDouble();
 
-             //Si p es 0 entonces break
+            double precio = sc.nextDouble();
 
-            if (!U2Service.esPrecioValido(p)) {
+            if (precio == 0) break;
+
+            if (!codigo.esPrecioValido(precio)) {
                 System.out.println("Precio inválido");
                 continue;
             }
 
-            subtotal = U2Service.calcularSubtotal(subtotal, p);
+            subtotal = codigo.calcularSubtotal(subtotal, precio);
         }
 
+        // Método de pago
         System.out.println("Método de pago: 1) Efectivo  2) Tarjeta");
 
         if (!sc.hasNextInt()) {
-            System.out.println("Entrada inválida");
             return;
         }
+
         int metodo = sc.nextInt();
 
-        if () { //Validacion de metodo de pago de 1 o 2
-            System.out.println("Método inválido");
+        if (metodo != 1 && metodo != 2) {
             return;
         }
 
-        double descuento = U2Service.calcularDescuento(subtotal, metodo);
-        double total = U2Service.calcularTotal(subtotal, descuento);
+        // Cálculos finales
+        double descuento = codigo.calcularDescuento(subtotal, metodo);
+        double total = codigo.calcularTotal(subtotal, descuento);
 
-        System.out.println("=== TICKET ===");
-        System.out.println("Subtotal: "+subtotal);
-        System.out.println("Descuento: "+ descuento);
-        System.out.println("Total: "+ total);
+        // Ticket final
+        System.out.println("\n--- TICKET ---");
+        System.out.printf("Subtotal: %.2f\n", subtotal);
+        System.out.printf("Descuento: %.2f\n", descuento);
+        System.out.printf("Total: %.2f\n", total);
     }
 }
